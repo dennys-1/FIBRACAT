@@ -12,16 +12,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FullName)
+                @Html.DisplayNameFor(model => model.CORREO)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EmpCode)
+                @Html.DisplayNameFor(model => model.TELEFONO)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Position)
+                @Html.DisplayNameFor(model => model.DNI)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.OfficeLocation)
+                @Html.DisplayNameFor(model => model.DIRECCION)
             </th>
             <th>
                 <a asp-action="AddOrEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i> CLIENTE</a>
@@ -32,20 +32,20 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.FullName)
+                @Html.DisplayFor(modelItem => item.CORREO)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EmpCode)
+                @Html.DisplayFor(modelItem => item.TELEFONO)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Position)
+                @Html.DisplayFor(modelItem => item.DNI)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.OfficeLocation)
+                @Html.DisplayFor(modelItem => item.DIRECCION)
             </td>
             <td>
-                <a asp-action="AddOrEdit" asp-route-id="@item.EmployeeId"><i class="fa fa-marker fa-lg"></i></a>
-                <a asp-action="Delete" asp-route-id="@item.EmployeeId" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt fa-lg"></i></a>
+                <a asp-action="AddOrEdit" asp-route-id="@item.CID"><i class="fa fa-marker fa-lg"></i></a>
+                <a asp-action="Delete" asp-route-id="@item.CID" class="text-danger ml-1" onclick="return confirm('¿Estás seguro de eliminar este registro?')"><i class="fa fa-trash-alt fa-lg"></i></a>
             </td>
         </tr>
 }

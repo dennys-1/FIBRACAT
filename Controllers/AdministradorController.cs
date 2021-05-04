@@ -21,7 +21,7 @@ namespace Asp.netCoreMVCCRUD.Controllers
         // GET: Employee
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Employees.ToListAsync());
+            return View(await _context.Admin.ToListAsync());
         }
 
 
@@ -31,7 +31,7 @@ namespace Asp.netCoreMVCCRUD.Controllers
             if (id == 0)
                 return View(new Administrador());
             else
-                return View(_context.Employees.Find(id));
+                return View(_context.Admin.Find(id));
         }
 
         // POST: Employee/Create
@@ -39,11 +39,11 @@ namespace Asp.netCoreMVCCRUD.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddOrEdit([Bind("EmployeeId,FullName,EmpCode,Position,OfficeLocation")] Administrador administrador)
+        public async Task<IActionResult> AddOrEdit([Bind("CID,CORREO,TELEFONO,DNI,DIRECCION")] Administrador administrador)
         {
             if (ModelState.IsValid)
             {
-                if (administrador.EmployeeId == 0)
+                if (administrador.CID == 0)
                     _context.Add(administrador);
                 else
                     _context.Update(administrador);
@@ -57,8 +57,8 @@ namespace Asp.netCoreMVCCRUD.Controllers
         // GET: Employee/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            var administrador =await _context.Employees.FindAsync(id);
-            _context.Employees.Remove(administrador);
+            var administrador =await _context.Admin.FindAsync(id);
+            _context.Admin.Remove(administrador);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

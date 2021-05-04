@@ -4,41 +4,42 @@
     
 }
 
-<h4>Employee Form</h4>
+<h4>REGISTRAR CLIENTES</h4>
 <hr />
 <div class="row">
     <div class="col-md-6">
         <form asp-action="AddOrEdit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="EmployeeId" />
+            <input type="hidden" asp-for="CID" />
             <div class="form-group">
-                <label asp-for="FullName" class="control-label"></label>
-                <input asp-for="FullName" class="form-control" />
-                <span asp-validation-for="FullName" class="text-danger"></span>
+                <label asp-for="CORREO" class="control-label"></label>
+                <input asp-for="CORREO" class="form-control" />
+                <span asp-validation-for="CORREO" class="text-danger"></span>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label asp-for="EmpCode" class="control-label"></label>
-                    <input asp-for="EmpCode" class="form-control" />
-                    <span asp-validation-for="EmpCode" class="text-danger"></span>
+                    <label asp-for="TELEFONO" class="control-label"></label>
+                    <input asp-for="TELEFONO" class="form-control" />
+                    <span asp-validation-for="TELEFONO" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-6">
-                    <label asp-for="Position" class="control-label"></label>
-                    <input asp-for="Position" class="form-control" />
-                    <span asp-validation-for="Position" class="text-danger"></span>
+                    <label asp-for="DNI" class="control-label"></label>
+                    <input asp-for="DNI" class="form-control" />
+                    <span asp-validation-for="DNI" class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group">
-                <label asp-for="OfficeLocation" class="control-label"></label>
-                <input asp-for="OfficeLocation" class="form-control" />
-                <span asp-validation-for="OfficeLocation" class="text-danger"></span>
+                <label asp-for="DIRECCION" class="control-label"></label>
+                <input asp-for="DIRECCION" class="form-control" />
+                <span asp-validation-for="DIRECCION" class="text-danger"></span>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <input type="submit" value="Submit" class="btn btn-primary btn-block" />
                 </div>
                 <div  class="form-group col-md-6">
-                    <a asp-action="Index"  class="btn btn-secondary btn-block"><i class="fa fa-table"></i> Back to List</a>
+                    <a asp-action="Index"  class="btn btn-secondary btn-block"><i class="fa fa-table"></i> 
+Volver a la lista</a>
                 </div>
             </div>
         </form>

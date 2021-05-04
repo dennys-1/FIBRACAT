@@ -12,6 +12,6 @@ namespace Asp.netCoreMVCCRUD.Models
         {
         }
 
-        public DbSet<Administrador> Employees { get; set; }
+        public DbSet<Administrador> Admin { get; set; }
     }
 }

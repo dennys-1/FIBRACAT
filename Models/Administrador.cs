@@ -11,19 +11,19 @@ namespace Asp.netCoreMVCCRUD.Models
     public class Administrador
     {
         [Key]
-        public int EmployeeId { get; set; }
+        public int CID { get; set; }
         [Column(TypeName ="nvarchar(250)")]
         [Required(ErrorMessage ="This field is required.")]
         [DisplayName("Correo")]
-        public string FullName { get; set; }
+        public string CORREO { get; set; }
         [Column(TypeName = "varchar(10)")]
         [DisplayName("Telefono")]
-        public string EmpCode { get; set; }
+        public string TELEFONO { get; set; }
         [Column(TypeName = "varchar(100)")]
          [DisplayName("DNI / RUC")]
-        public string Position { get; set; }
+        public string DNI { get; set; }
         [Column(TypeName = "varchar(100)")]
         [DisplayName("Direccion")]
-        public string OfficeLocation { get; set; }
+        public string DIRECCION { get; set; }
     }
 }
