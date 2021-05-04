@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Asp.netCoreMVCCRUD.Models
 {
-    public class EmployeeContext:DbContext
+    public class AdministradorContext:DbContext
     {
-        public EmployeeContext(DbContextOptions<EmployeeContext> options):base(options)
+        public AdministradorContext(DbContextOptions<AdministradorContext> options):base(options)
         {
         }
 
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Administrador> Employees { get; set; }
     }
 }

@@ -35,7 +35,7 @@ namespace Asp.netCoreMVCCRUD
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddDbContext<EmployeeContext>(options => 
+            services.AddDbContext<AdministradorContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
         }
 
@@ -58,7 +58,7 @@ namespace Asp.netCoreMVCCRUD
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Employee}/{action=Index}/{id?}");
+                    template: "{controller=Administrador}/{action=Index}/{id?}");
             });
         }
     }

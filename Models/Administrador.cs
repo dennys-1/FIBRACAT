@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Asp.netCoreMVCCRUD.Models
 {
-    public class Employee
+    public class Administrador
     {
         [Key]
         public int EmployeeId { get; set; }

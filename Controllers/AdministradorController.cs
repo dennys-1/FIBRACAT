@@ -9,11 +9,11 @@ using Asp.netCoreMVCCRUD.Models;
 
 namespace Asp.netCoreMVCCRUD.Controllers
 {
-    public class EmployeeController : Controller
+    public class AdministradorController : Controller
     {
-        private readonly EmployeeContext _context;
+        private readonly AdministradorContext _context;
 
-        public EmployeeController(EmployeeContext context)
+        public AdministradorController(AdministradorContext context)
         {
             _context = context;
         }
@@ -29,7 +29,7 @@ namespace Asp.netCoreMVCCRUD.Controllers
         public IActionResult AddOrEdit(int id = 0)
         {
             if (id == 0)
-                return View(new Employee());
+                return View(new Administrador());
             else
                 return View(_context.Employees.Find(id));
         }
@@ -39,26 +39,26 @@ namespace Asp.netCoreMVCCRUD.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddOrEdit([Bind("EmployeeId,FullName,EmpCode,Position,OfficeLocation")] Employee employee)
+        public async Task<IActionResult> AddOrEdit([Bind("EmployeeId,FullName,EmpCode,Position,OfficeLocation")] Administrador administrador)
         {
             if (ModelState.IsValid)
             {
-                if (employee.EmployeeId == 0)
-                    _context.Add(employee);
+                if (administrador.EmployeeId == 0)
+                    _context.Add(administrador);
                 else
-                    _context.Update(employee);
+                    _context.Update(administrador);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(employee);
+            return View(administrador);
         }
 
 
         // GET: Employee/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            var employee =await _context.Employees.FindAsync(id);
-            _context.Employees.Remove(employee);
+            var administrador =await _context.Employees.FindAsync(id);
+            _context.Employees.Remove(administrador);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

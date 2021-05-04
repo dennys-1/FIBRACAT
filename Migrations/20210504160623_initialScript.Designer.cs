@@ -9,18 +9,18 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Asp.netCoreMVCCRUD.Migrations
 {
     [DbContext(typeof(AdministradorContext))]
-    [Migration("20181223091420_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20210504160623_initialScript")]
+    partial class initialScript
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.0-rtm-35687")
+                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Asp.netCoreMVCCRUD.Models.Employee", b =>
+            modelBuilder.Entity("Asp.netCoreMVCCRUD.Models.Administrador", b =>
                 {
                     b.Property<int>("EmployeeId")
                         .ValueGeneratedOnAdd()
@@ -41,7 +41,7 @@ namespace Asp.netCoreMVCCRUD.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.ToTable("Employees");
+                    b.ToTable("Admin");
                 });
 #pragma warning restore 612, 618
         }

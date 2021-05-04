@@ -118,8 +118,6 @@ C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp.netCoreMVCCRUD.TagHelpers.input.cache
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp.netCoreMVCCRUD.TagHelpers.output.cache
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp.netCoreMVCCRUD.RazorCoreGenerate.cache
-C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Employee\AddOrEdit.cshtml.g.cs
-C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Employee\Index.cshtml.g.cs
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
@@ -135,3 +133,5 @@ C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp.netCoreMVCCRUD.pdb
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp.netCoreMVCCRUD.genruntimeconfig.cache
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp.netCoreMVCCRUD.csproj.CopyComplete
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\AddOrEdit.cshtml.g.cs
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Index.cshtml.g.cs
