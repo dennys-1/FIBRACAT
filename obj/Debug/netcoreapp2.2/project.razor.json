@@ -1877,6 +1877,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Administrador\\Index.cshtml",
+      "TargetPath": "Views\\Administrador\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -1889,11 +1894,6 @@
     {
       "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Employee\\Index.cshtml",
-      "TargetPath": "Views\\Employee\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -1917,8 +1917,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Employee\\AddOrEdit.cshtml",
-      "TargetPath": "Views\\Employee\\AddOrEdit.cshtml",
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Administrador\\AddOrEdit.cshtml",
+      "TargetPath": "Views\\Administrador\\AddOrEdit.cshtml",
       "FileKind": "mvc"
     }
   ],
