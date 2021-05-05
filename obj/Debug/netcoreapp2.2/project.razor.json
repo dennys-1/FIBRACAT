@@ -1902,11 +1902,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Ventas\\Documento.cshtml",
-      "TargetPath": "Views\\Ventas\\Documento.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Ventas\\Consultar.cshtml",
       "TargetPath": "Views\\Ventas\\Consultar.cshtml",
       "FileKind": "mvc"
