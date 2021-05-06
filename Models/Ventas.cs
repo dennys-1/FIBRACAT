@@ -5,30 +5,52 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+
 namespace Asp.netCoreMVCCRUD.Models
 {
+
     public class Ventas
     {
-       [Key]
-        public int  IdVenta{get; set;}
+       /*
+        public int  IdProducto{get; set;}
          public int  Codigo{get; set;}
     
-     public int  idTienda{get; set;}
+     public string  Nombre{get; set;}
     
-     public int  IdUsuario{get; set;}
+     public string  Descripcion{get; set;}
     
-     public int  IdCliente{get; set;}
+     public int  Activo{get; set;}
+     */
+
+
+
+      [Key]
+        public int IdProducto { get; set; }
+
+
+
+        [Column(TypeName ="varchar(10)")]
+        [Required(ErrorMessage ="This field is required.")]
+        public int Codigo { get; set; }
+
+
+
+        [Column(TypeName = "varchar(100)")]
+        public string Nombre { get; set; }
+
+
+        [Column(TypeName = "varchar(100)")]
+        public string Descripcion { get; set; }
+
+
+        [Column(TypeName = "varchar(1)")]
+        public int Activo { get; set; }
     
-     public int  TipoDocumento{get; set;}
-      public int  CantidadProducto{get; set;}
-       public int  CantiddadTotal{get; set;}
-        public int  TotalCosto{get; set;}
-         public int  ImporteRecibido{get; set;}
-          public int  ImporteCambio{get; set;}
-           public string  Activo{get; set;}
-            public int  FechaRegistro{get; set;}
+
+
     
-    
+     
+
         
     }
 }

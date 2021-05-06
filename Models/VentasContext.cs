@@ -1,4 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Asp.netCoreMVCCRUD.Models
 {
@@ -8,8 +12,7 @@ namespace Asp.netCoreMVCCRUD.Models
         {
         }
 
-        public DbSet<Administrador> Admin { get; set; }
-         public DbSet<Ventas> VENTA { get; set; }
+          public DbSet<Ventas> Prueba { get; set; }
         
     }
 }
