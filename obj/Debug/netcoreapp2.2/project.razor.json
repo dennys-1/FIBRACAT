@@ -1887,6 +1887,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Ventas\\Producto.cshtml",
+      "TargetPath": "Views\\Ventas\\Producto.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -1894,11 +1899,6 @@
     {
       "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Ventas\\Crear.cshtml",
-      "TargetPath": "Views\\Ventas\\Crear.cshtml",
       "FileKind": "mvc"
     },
     {

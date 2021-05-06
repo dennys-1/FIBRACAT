@@ -8,11 +8,11 @@ namespace FABRICAT.Controllers
         {
             return View ();
         }
-         public ActionResult Crear()
+         public ActionResult Producto()
         {
             return View ();
         }
-         public ActionResult Docuemneto()
+          public ActionResult Productos()
         {
             return View ();
         }

@@ -134,4 +134,4 @@ C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\AddOrEdit.cshtml.g.cs
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Index.cshtml.g.cs
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\Consultar.cshtml.g.cs
-C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\Crear.cshtml.g.cs
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\Producto.cshtml.g.cs
