@@ -137,3 +137,4 @@ C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Raz
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\Productos.cshtml.g.cs
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\AddOrEdit.cshtml.g.cs
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\Index.cshtml.g.cs
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\planes.cshtml.g.cs

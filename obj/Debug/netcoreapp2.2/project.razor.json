@@ -1877,6 +1877,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Administrador\\planes.cshtml",
+      "TargetPath": "Views\\Administrador\\planes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Administrador\\Index.cshtml",
       "TargetPath": "Views\\Administrador\\Index.cshtml",
       "FileKind": "mvc"
