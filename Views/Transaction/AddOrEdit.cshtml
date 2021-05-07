@@ -1,0 +1,70 @@
+﻿@model Asp.netCoreMVCCRUD.Models.TransactionModel
+
+@{ Layout = null; }
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="AddOrEdit" asp-route-id="@Model.CID" onsubmit="return jQueryAjaxPost(this);">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CID  " />
+            <input type="hidden" asp-for="Date" />
+            <div class="form-group">
+                <label asp-for="CORREO" class="control-label"></label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input asp-for="CORREO" class="form-control" />
+                </div>
+                <span asp-validation-for="CORREO" class="text-danger"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="TELEFONO" class="control-label"></label>
+                        <input asp-for="TELEFONO" class="form-control" />
+                        <span asp-validation-for="TELEFONO" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="DNI" class="control-label"></label>
+                        <input asp-for="DNI" class="form-control" />
+                        <span asp-validation-for="DNI" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="DIRECCION" class="control-label"></label>
+                        <input asp-for="DIRECCION" class="form-control" />
+                        <span asp-validation-for="DIRECCION" class="text-danger"></span>
+                    </div>
+                </div>
+               
+               
+                    <div class="col-md-6">
+                          <label asp-for="VELOCIDAD" class="control-label"></label>
+                        <select class="form-control form-control-sm model" id="VELOCIDAD" name="VELOCIDAD">
+                                <option value="1" data-color="#CD5C5C" selected="selected">Activo</option>
+                                <option value="0"data-color="#CD5C5C" selected="selected">No Activo</option>
+                                 <span asp-validation-for="VELOCIDAD" class="text-danger"></span>
+
+                            </select>
+                        <span asp-validation-for="VELOCIDAD" class="text-danger"></span>
+                        
+
+                    </div>
+                </div>
+            
+           
+            <div class="form-group row">
+                
+                <div class="col-md-6 offset-md-3">
+                    <input type="submit" value="Agregar" class="btn btn-primary btn-block" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

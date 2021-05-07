@@ -133,8 +133,10 @@ C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Asp.netCoreMVCCRUD.csproj.CopyComplete
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\AddOrEdit.cshtml.g.cs
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Index.cshtml.g.cs
-C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\Consultar.cshtml.g.cs
-C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\Productos.cshtml.g.cs
-C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\AddOrEdit.cshtml.g.cs
-C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Ventas\Index.cshtml.g.cs
 C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\planes.cshtml.g.cs
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\bin\Debug\netcoreapp2.2\libman.json
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\AddOrEdit.cshtml.g.cs
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\Create.cshtml.g.cs
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\Details.cshtml.g.cs
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\Index.cshtml.g.cs
+C:\Users\FLORES\Desktop\PROGRAMACION\CARLOS\FABRICAT\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\_ViewAll.cshtml.g.cs

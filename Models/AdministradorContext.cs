@@ -13,7 +13,7 @@ namespace Asp.netCoreMVCCRUD.Models
         }
 
         public DbSet<Administrador> Admin { get; set; }
-         public DbSet<Ventas> Prueba { get; set; }
+       
          
     }
 }
