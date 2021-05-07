@@ -37,6 +37,8 @@ namespace Asp.netCoreMVCCRUD
 
             services.AddDbContext<AdministradorContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<TransactionDbContext>(options => 
+            options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
            
         }
 
@@ -59,7 +61,7 @@ namespace Asp.netCoreMVCCRUD
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Administrador}/{action=Index}/{id?}");
+                    template: "{controller=Transaction}/{action=Index}/{id?}");
             });
         }
     }
