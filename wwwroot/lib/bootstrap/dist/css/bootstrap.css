@@ -171,7 +171,7 @@ a {
 
 a:hover {
   
-  
+
    text-decoration: underline;
 }
 
@@ -1519,14 +1519,17 @@ pre code {
     margin-left: 91.666667%;
   }
 }
-
+.table th{
+align-items: center;
+  text-align: center;
+  
+}
 .table {
   width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
   color:rgb(16, 19, 14);
-  display: flex;
-  justify-content: center;
+  
   background: chartreuse;
 }
 
@@ -3892,16 +3895,17 @@ input[type="button"].btn-block {
 }
 
 .nav-link {
-  display: block;
- 
+
+  margin-left: 20px;
   
 }
 
 .nav-link:hover, .nav-link:focus {
-  margin: 20px;
+  
   text-decoration: none;
   padding: 18px;
-  background: rgb(52, 255, 2);
+  background: chartreuse;
+  border-radius: 10px;
 }
 
 .nav-link.disabled {
@@ -4021,7 +4025,7 @@ input[type="button"].btn-block {
 
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
+  padding-left: 10px;
   margin-bottom: 0;
   list-style: none;
   display: flex;
@@ -4051,7 +4055,7 @@ input[type="button"].btn-block {
   flex-grow: 1;
   -ms-flex-align: center;
   align-items: center;
-
+margin-right: 10px;
 }
 .cabeza{
   background: white;
