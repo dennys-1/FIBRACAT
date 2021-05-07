@@ -39,6 +39,7 @@ namespace Asp.netCoreMVCCRUD
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
             services.AddDbContext<TransactionDbContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            
            
         }
 
