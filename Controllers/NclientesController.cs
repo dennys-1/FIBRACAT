@@ -12,13 +12,13 @@ namespace Asp.netCoreMVCCRUD.Controllers
 {
     public class NclientesController 
     {
-        /*
+        
 
         public IActionResult Index()
         {
             return View();
         }
-        */
+        
         
     }
 }
