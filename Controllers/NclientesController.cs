@@ -14,10 +14,7 @@ namespace Asp.netCoreMVCCRUD.Controllers
     {
        
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
        
         
         
