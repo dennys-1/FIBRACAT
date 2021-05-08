@@ -17,7 +17,87 @@
     </environment>
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Para el ancho y alto de las imagenes. Modificalo a gusto =)  */
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 100%;
+            height: 500px;
+            margin: auto;
+        }
+        /* Para los margenes del contendor de las fotos. Podes cambiarle el ancho a gusto tambien! */
+        .carousel-control {
+            width: 10%;
+        }
+
+.product {
+  position: relative;
+  margin: 15px 0px;
+  transition: 0.2s all;
+}
+
+.product:hover {
+  box-shadow: 0px 0px 6px 0px #F3753A;
+}
+
+.product .product-img {
+  position: relative;
+}
+
+.product .product-img>img {
+  width: 100%;
+}
+
+.product .product-body {
+  position: relative;
+  padding: 15px;
+  background-color: #FFF;
+  text-align: center;
+  z-index: 20;
+}
+
+.product .product-body .product-category {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #8D99AE;
+}
+
+.product .product-body .product-name {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.product .product-body .product-name>a {
+  font-weight: 700;
+}
+
+.product .product-body .product-price {
+  color: #D10024;
+  font-size: 16px;
+}
+
+.product .product-body .product-btns>button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+}
+
+.product .product-body .product-btns>button:hover {
+  background-color: #333333;
+  color: #F3753A;
+  border-radius: 50%;
+}
+</style>
+
 </head>
+
+
 <body>
 
 <header class="header">
@@ -40,7 +120,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Transaction" asp-action="Index">REGISTRO DE VENTAS</a>
                         </li>
                         <li class="nav-item">
- <a class="nav-link text-dark" asp-area="" asp-controller="Index" asp-action="Inicio">CLIE</a>
+ <a class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="Inicio">CLIE</a>
 </li>
                           
                     </ul>
@@ -48,6 +128,9 @@
             </div>
         </nav>
     </header>
+
+
+
 
     </body>
 </html>
