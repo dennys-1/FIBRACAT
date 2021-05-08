@@ -13,7 +13,7 @@ namespace Asp.netCoreMVCCRUD.Controllers
     public class PaquetesController : Controller
 
     {
-        public IActionResult Inicio()
+        public IActionResult Paquetes()
         {
             return View();
         }
