@@ -40,6 +40,7 @@ namespace Asp.netCoreMVCCRUD.Models
         public string VELOCIDAD { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+         [DisplayName("Fecha")]
         public DateTime Date { get; set; }
     }
 }

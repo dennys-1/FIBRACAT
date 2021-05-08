@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Asp.netCoreMVCCRUD.Models.TransactionModel>
 
-        <div class="row">
+    <div class="row">
 
 
 
@@ -30,7 +30,7 @@
                     </th>
                    
                     <th>
-                        <a onclick="showInPopup('@Url.Action("AddOrEdit","Transaction",null,Context.Request.Scheme)','New Transaction')" class="btn btn-outline-success"><i class="far fa-plus-square"></i> Agregar</a>
+                        <a onclick="showInPopup('@Url.Action("AddOrEdit","Transaction",null,Context.Request.Scheme)','Nuevo Registro')" class="btn btn-outline-success"><i class="far fa-plus-square"></i> Agregar</a>
                     </th>
                 </tr>
             </thead>
@@ -60,7 +60,7 @@
                         
                         <td>
                             <div>
-                                <a onclick="showInPopup('@Url.Action("AddOrEdit","Transaction",new {id=item.CID},Context.Request.Scheme)','Update Transaction')" class=""><i class="fas fa-pencil-alt"></i> </a>
+                                <a onclick="showInPopup('@Url.Action("AddOrEdit","Transaction",new {id=item.CID},Context.Request.Scheme)','Actualizar Registro')" class=""><i class="fas fa-pencil-alt"></i> </a>
                                 <a asp-action="Delete" asp-route-id="@item.CID" class="text-danger ml-1" onclick="return confirm('¿ESTAS SEGURO?')"><i class="fa fa-trash-alt fa-lg"></i></a>
                             </div>
                         </td>

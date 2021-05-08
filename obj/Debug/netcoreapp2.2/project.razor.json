@@ -1870,6 +1870,77 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "Asp.netCoreMVCCRUD",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Administrador\\planes.cshtml",
+      "TargetPath": "Views\\Administrador\\planes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Administrador\\Index.cshtml",
+      "TargetPath": "Views\\Administrador\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Transaction\\Index.cshtml",
+      "TargetPath": "Views\\Transaction\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Transaction\\Details.cshtml",
+      "TargetPath": "Views\\Transaction\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Transaction\\Create.cshtml",
+      "TargetPath": "Views\\Transaction\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Transaction\\_ViewAll.cshtml",
+      "TargetPath": "Views\\Transaction\\_ViewAll.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Administrador\\AddOrEdit.cshtml",
+      "TargetPath": "Views\\Administrador\\AddOrEdit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Transaction\\AddOrEdit.cshtml",
+      "TargetPath": "Views\\Transaction\\AddOrEdit.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
