@@ -1945,6 +1945,11 @@
       "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Transaction\\AddOrEdit.cshtml",
       "TargetPath": "Views\\Transaction\\AddOrEdit.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Cliente\\Inicio.cshtml",
+      "TargetPath": "Views\\Cliente\\Inicio.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
