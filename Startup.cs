@@ -62,7 +62,7 @@ namespace Asp.netCoreMVCCRUD
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Administrador}/{action=Index}/{id?}");
+                    template: "{controller=Cliente}/{action=Index}/{id?}");
             });
         }
     }
