@@ -9,7 +9,7 @@ using Asp.netCoreMVCCRUD.Models;
 
 namespace Asp.netCoreMVCCRUD.Controllers
 {
-    public class ClienteController
+    public class ClienteController : Controller
     {
         public IActionResult Inicio()
         {
