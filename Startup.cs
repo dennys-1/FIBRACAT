@@ -35,10 +35,9 @@ namespace Asp.netCoreMVCCRUD
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddDbContext<AdministradorContext>(options => 
+            services.AddDbContext<EntrenadorContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
-            services.AddDbContext<TransactionDbContext>(options => 
-            options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+           
             
            
         }
@@ -62,7 +61,7 @@ namespace Asp.netCoreMVCCRUD
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Administrador}/{action=Index}/{id?}"); 
+                    template: "{controller=Entrenador}/{action=Index}/{id?}"); 
                     
             });
         }

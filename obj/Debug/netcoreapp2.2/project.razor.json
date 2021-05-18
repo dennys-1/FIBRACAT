@@ -1927,6 +1927,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Entrenador\\AddOrEdit.cshtml",
+      "TargetPath": "Views\\Entrenador\\AddOrEdit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Transaction\\_ViewAll.cshtml",
       "TargetPath": "Views\\Transaction\\_ViewAll.cshtml",
       "FileKind": "mvc"
@@ -1939,6 +1944,11 @@
     {
       "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Administrador\\AddOrEdit.cshtml",
       "TargetPath": "Views\\Administrador\\AddOrEdit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\FLORES\\Desktop\\PROGRAMACION\\CARLOS\\FABRICAT\\Views\\Entrenador\\Index.cshtml",
+      "TargetPath": "Views\\Entrenador\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

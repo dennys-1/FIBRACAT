@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,11 +10,12 @@ using Asp.netCoreMVCCRUD.Models;
 
 namespace Asp.netCoreMVCCRUD.Controllers
 {
-    public class AdministradorController : Controller
+    public class EntrenadorController : Controller
     {
-        private readonly AdministradorContext _context;
 
-        public AdministradorController(AdministradorContext context)
+          private readonly EntrenadorContext _context;
+
+        public EntrenadorController(EntrenadorContext context)
         {
             _context = context;
         }
@@ -22,7 +23,7 @@ namespace Asp.netCoreMVCCRUD.Controllers
         // GET: Administrador
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Admin.ToListAsync());
+            return View(await _context.Flores1.ToListAsync());
         }
 
 
@@ -30,37 +31,37 @@ namespace Asp.netCoreMVCCRUD.Controllers
         public IActionResult AddOrEdit(int id = 0)
         {
             if (id == 0)
-                return View(new Administrador());
+                return View(new Entrenador());
             else
-                return View(_context.Admin.Find(id));
+                return View(_context.Flores1.Find(id));
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddOrEdit([Bind("CID,CORREO,TELEFONO,DNI,DIRECCION")] Administrador administrador)
+        public async Task<IActionResult> AddOrEdit([Bind("Id,Nombre,foto,pueblo")] Entrenador entrenador)
         {
             if (ModelState.IsValid)
             {
-                if (administrador.CID == 0)
-                    _context.Add(administrador);
+                if (entrenador.Id == 0)
+                    _context.Add(entrenador);
                 else
-                    _context.Update(administrador);
+                    _context.Update(entrenador);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(administrador);
+            return View(entrenador);
         }
 
 
         // GET: Administrador/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            var administrador =await _context.Admin.FindAsync(id);
-            _context.Admin.Remove(administrador);
+            var entrenador =await _context.Flores1.FindAsync(id);
+            _context.Flores1.Remove(entrenador);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-
+        
     }
 }

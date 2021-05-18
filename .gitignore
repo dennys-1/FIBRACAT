@@ -1,5 +1,6 @@
-.netCoreMVCCRUD/bin/
-.netCoreMVCCRUD/obj/
-bin
+
+bin/Debug/netcoreapp2.2
 obj
+.bin
+.obj
 
