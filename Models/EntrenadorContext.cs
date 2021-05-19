@@ -12,7 +12,7 @@ namespace Asp.netCoreMVCCRUD.Models
         {
         }
 
-        public DbSet<Entrenador> Flores1 { get; set; }
+        public DbSet<Entrenador> Flores { get; set; }
         
     }
 }

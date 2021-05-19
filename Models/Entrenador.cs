@@ -19,7 +19,7 @@ namespace Asp.netCoreMVCCRUD.Models
         [DisplayName("Nombre")]
         public string Nombre { get; set; }
 
-        [Column(TypeName = "nvarchar(50)")]
+        [Column(TypeName = "varbinary(50)")]
         [DisplayName("Foto")]
         public string foto { get; set; }
 

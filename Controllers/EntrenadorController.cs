@@ -23,7 +23,7 @@ namespace Asp.netCoreMVCCRUD.Controllers
         // GET: Administrador
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Flores1.ToListAsync());
+            return View(await _context.Flores.ToListAsync());
         }
 
 
@@ -33,7 +33,7 @@ namespace Asp.netCoreMVCCRUD.Controllers
             if (id == 0)
                 return View(new Entrenador());
             else
-                return View(_context.Flores1.Find(id));
+                return View(_context.Flores.Find(id));
         }
 
         [HttpPost]
@@ -56,8 +56,8 @@ namespace Asp.netCoreMVCCRUD.Controllers
         // GET: Administrador/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            var entrenador =await _context.Flores1.FindAsync(id);
-            _context.Flores1.Remove(entrenador);
+            var entrenador =await _context.Flores.FindAsync(id);
+            _context.Flores.Remove(entrenador);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
