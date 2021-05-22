@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Asp.netCoreMVCCRUD.Models.TransactionModel>
+
+    <div class="row">
+
+
+
+        <h1 class="text-center"></i> REGISTRO VENTAS</h1>
+
+
+        <table class="table table-sm">
+            <thead class="thead-dark">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CORREO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TELEFONO)
+                    </th>
+                     <th>
+                        @Html.DisplayNameFor(model => model.DNI)
+                    </th>
+                     <th>
+                        @Html.DisplayNameFor(model => model.DIRECCION)
+                    </th>
+                     <th>
+                        @Html.DisplayNameFor(model => model.VELOCIDAD)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Date)
+                    </th>
+                   
+                    <th>
+                        <a onclick="showInPopup('@Url.Action("AddOrEdit","Transaction",null,Context.Request.Scheme)','Nuevo Registro')" class="btn btn-outline-success"><i class="far fa-plus-square"></i> Agregar</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CORREO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TELEFONO)
+                        </td>
+                         <td>
+                            @Html.DisplayFor(modelItem => item.DNI)
+                        </td>
+                         <td>
+                            @Html.DisplayFor(modelItem => item.DIRECCION)
+                        </td>
+                         <td>
+                            @Html.DisplayFor(modelItem => item.VELOCIDAD)
+                        </td>
+                        
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                        
+                        <td>
+                            <div>
+                                <a onclick="showInPopup('@Url.Action("AddOrEdit","Transaction",new {id=item.CID},Context.Request.Scheme)','Actualizar Registro')" class=""><i class="fas fa-pencil-alt"></i> </a>
+                                <a asp-action="Delete" asp-route-id="@item.CID" class="text-danger ml-1" onclick="return confirm('¿ESTAS SEGURO?')"><i class="fa fa-trash-alt fa-lg"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
