@@ -22,7 +22,7 @@ namespace FIBRACAT.Controllers
         // GET: Transaction
         public async Task<IActionResult> Index()
         {
-            return View(await _context.FLORES.ToListAsync());
+            return View(await _context.CATEGORIA.ToListAsync());
         }
 
         // GET: Transaction/AddOrEdit(Insert)
@@ -34,7 +34,7 @@ namespace FIBRACAT.Controllers
                 return View(new TransactionModel());
             else
             {
-                var transactionModel = await _context.FLORES.FindAsync(id);
+                var transactionModel = await _context.CATEGORIA.FindAsync(id);
                 if (transactionModel == null)
                 {
                     return NotFound();
@@ -45,16 +45,14 @@ namespace FIBRACAT.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddOrEdit(int id, [Bind("CID,CORREO,TELEFONO,DNI,DIRECCION,VELOCIDAD,Date")] TransactionModel transactionModel)
+        public async Task<IActionResult> AddOrEdit(int id, [Bind("CID,CATEGORIA,IDCATEGORIA")] TransactionModel transactionModel)
         {
             if (ModelState.IsValid)
             {
                 //Insert
                 if (id == 0)
                 {
-                    transactionModel.Date = DateTime.Now;
-                    _context.Add(transactionModel);
-                    await _context.SaveChangesAsync();
+                    
 
                 }
                 //Update
@@ -73,7 +71,7 @@ namespace FIBRACAT.Controllers
                         { throw; }
                     }
                 }
-                return Json(new { isValid = true, html = Helper.RenderRazorViewToString(this, "_ViewAll", _context.FLORES.ToList()) });
+                return Json(new { isValid = true, html = Helper.RenderRazorViewToString(this, "_ViewAll", _context.CATEGORIA.ToList()) });
             }
             return Json(new { isValid = false, html = Helper.RenderRazorViewToString(this, "AddOrEdit", transactionModel) });
         }
@@ -86,7 +84,7 @@ namespace FIBRACAT.Controllers
                 return NotFound();
             }
 
-            var transactionModel = await _context.FLORES
+            var transactionModel = await _context.CATEGORIA
                 .FirstOrDefaultAsync(m => m.CID == id);
             if (transactionModel == null)
             {
@@ -101,15 +99,15 @@ namespace FIBRACAT.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var transactionModel = await _context.FLORES.FindAsync(id);
-            _context.FLORES.Remove(transactionModel);
+            var transactionModel = await _context.CATEGORIA.FindAsync(id);
+            _context.CATEGORIA.Remove(transactionModel);
             await _context.SaveChangesAsync();
-            return Json(new { html = Helper.RenderRazorViewToString(this, "_ViewAll", _context.FLORES.ToList()) });
+            return Json(new { html = Helper.RenderRazorViewToString(this, "_ViewAll", _context.CATEGORIA.ToList()) });
         }
 
         private bool TransactionModelExists(int id)
         {
-            return _context.FLORES.Any(e => e.CID == id);
+            return _context.CATEGORIA.Any(e => e.CID == id);
         }
     }
 }

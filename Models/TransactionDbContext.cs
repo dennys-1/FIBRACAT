@@ -10,6 +10,6 @@ namespace FIBRACAT.Models
         public TransactionDbContext(DbContextOptions<TransactionDbContext> options) : base(options)
         { }
 
-        public DbSet<TransactionModel> FLORES { get; set; }
+        public DbSet<TransactionModel> CATEGORIA { get; set; }
     }
 }

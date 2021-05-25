@@ -7,55 +7,27 @@
         <form asp-action="AddOrEdit" asp-route-id="@Model.CID" onsubmit="return jQueryAjaxPost(this);">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="CID  " />
-            <input type="hidden" asp-for="Date" />
+            
             <div class="form-group">
-                <label asp-for="CORREO" class="control-label"></label>
+                <label asp-for="CATEGORIA" class="control-label"></label>
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <div class="input-group-text">#</div>
                     </div>
-                    <input asp-for="CORREO" class="form-control" />
+                    <input asp-for="CATEGORIA" class="form-control" />
                 </div>
-                <span asp-validation-for="CORREO" class="text-danger"></span>
+                <span asp-validation-for="CATEGORIA" class="text-danger"></span>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label asp-for="TELEFONO" class="control-label"></label>
-                        <input asp-for="TELEFONO" class="form-control" />
-                        <span asp-validation-for="TELEFONO" class="text-danger"></span>
+                        <label asp-for="IDCATEGORIA" class="control-label"></label>
+                        <input asp-for="IDCATEGORIA" class="form-control" />
+                        <span asp-validation-for="IDCATEGORIA" class="text-danger"></span>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label asp-for="DNI" class="control-label"></label>
-                        <input asp-for="DNI" class="form-control" />
-                        <span asp-validation-for="DNI" class="text-danger"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label asp-for="DIRECCION" class="control-label"></label>
-                        <input asp-for="DIRECCION" class="form-control" />
-                        <span asp-validation-for="DIRECCION" class="text-danger"></span>
-                    </div>
-                </div>
-               
-               
-                    <div class="col-md-6">
-                          <label asp-for="VELOCIDAD" class="control-label"></label>
-                        <select class="form-control form-control-sm model" id="VELOCIDAD" name="VELOCIDAD">
-                                <option value="Activo">Activo</option>
-                                <option value="No Activo">No Activo</option>
-                                 <span asp-validation-for="VELOCIDAD" class="text-danger"></span>
-
-                            </select>
-                        <span asp-validation-for="VELOCIDAD" class="text-danger"></span>
-                        
-
-                    </div>
+                
+ 
                 </div>
             
            

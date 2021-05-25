@@ -72,7 +72,7 @@ namespace FIBRACAT
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Transaction}/{action=Index}/{id?}");
+                    pattern: "{controller=Administrador}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

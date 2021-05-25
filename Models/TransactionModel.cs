@@ -12,35 +12,17 @@ namespace FIBRACAT.Models
         [Key]
         public int CID { get; set; }
 
-        [Column(TypeName = "nvarchar(100)")]
-        [DisplayName("DNI")]
+        [Column(TypeName = "nvarchar(50)")]
+        [DisplayName("CATEGORIA")]
         [Required(ErrorMessage = "Campo Obligatorio.")]
         
-        public string CORREO { get; set; }
+        public string CATEGORIA { get; set; }
 
-        [Column(TypeName = "nvarchar(10)")]
-        [DisplayName("VELOCIDAD")]
+        [Column(TypeName = "nvarchar(50)")]
+        [DisplayName("IDCATEGORIA")]
         [Required(ErrorMessage = "Campo Obligatorio.")]
-        public string TELEFONO { get; set; }
+        public string IDCATEGORIA { get; set; }
 
-        [Column(TypeName = "nvarchar(100)")]
-        [DisplayName("PRECIO")]
-        [Required(ErrorMessage = "Campo Obligatorio.")]
-        public string DNI { get; set; }
-
-        [Column(TypeName = "nvarchar(100)")]
-        [DisplayName("PRODUCTO")]
-        [Required(ErrorMessage = "Campo Obligatorio.")]
-        
-        public string DIRECCION { get; set; }
-
-     [Column(TypeName = "nvarchar(100)")]   
-        [DisplayName("SERVICIO")]
-        [Required(ErrorMessage = "Campo Obligatorio.")]
-        public string VELOCIDAD { get; set; }
-
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
-         [DisplayName("FECHA")]
-        public DateTime Date { get; set; }
+       
     }
 }

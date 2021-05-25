@@ -12,7 +12,7 @@ namespace FIBRACAT.Models
         {
         }
 
-        public DbSet<Administrador> Admin { get; set; }
+        public DbSet<Administrador> Solicitudes { get; set; }
        
        
          

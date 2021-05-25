@@ -22,7 +22,7 @@ namespace FIBRACAT.Controllers
         // GET: Administrador
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Admin.ToListAsync());
+            return View(await _context.Solicitudes.ToListAsync());
         }
 
 
@@ -32,12 +32,12 @@ namespace FIBRACAT.Controllers
             if (id == 0)
                 return View(new Administrador());
             else
-                return View(_context.Admin.Find(id));
+                return View(_context.Solicitudes.Find(id));
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddOrEdit([Bind("CID,CORREO,TELEFONO,DNI,DIRECCION")] Administrador administrador)
+        public async Task<IActionResult> AddOrEdit([Bind("CID,NPRODUCTO,FOTO,DESCRIPCION,PRECIO,CELULAR,LUGAR,NCOMPRADOR,CATEGORIA")] Administrador administrador)
         {
             if (ModelState.IsValid)
             {
@@ -55,8 +55,8 @@ namespace FIBRACAT.Controllers
         // GET: Administrador/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            var administrador =await _context.Admin.FindAsync(id);
-            _context.Admin.Remove(administrador);
+            var administrador =await _context.Solicitudes.FindAsync(id);
+            _context.Solicitudes.Remove(administrador);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
