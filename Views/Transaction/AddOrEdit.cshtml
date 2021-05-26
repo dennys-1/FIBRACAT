@@ -8,16 +8,17 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="CID  " />
             
-            <div class="form-group">
-                <label asp-for="CATEGORIA" class="control-label"></label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">#</div>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="CATEGORIA" class="control-label"></label>
+                        <input asp-for="CATEGORIA" class="form-control" />
+                        <span asp-validation-for="CATEGORIA" class="text-danger"></span>
                     </div>
-                    <input asp-for="CATEGORIA" class="form-control" />
                 </div>
-                <span asp-validation-for="CATEGORIA" class="text-danger"></span>
-            </div>
+                
+ 
+                </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
